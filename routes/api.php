@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Public routes
+Route::get('/test', function () {
+    return response()->json([
+        'success' => true,
+        'message' => 'API is working',
+    ]);
+});
+
 Route::post('/auth/login', [AuthController::class, 'login']);
 Route::post('/auth/register', [AuthController::class, 'register']);
 

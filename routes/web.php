@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/ping-admin', function () {
     return 'ADMIN OK';
 });
+
+Route::get('/bknd-test', function () {
+    return 'BKND TEST OK';
+});
+
+Route::get('/mgr-test', function () {
+    return 'MGR TEST OK';
+});
