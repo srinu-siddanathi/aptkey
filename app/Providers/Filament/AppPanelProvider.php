@@ -25,8 +25,8 @@ class AppPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->id('portal')
-            ->path('portal')
+            ->id('mgr')
+            ->path('mgr')
             ->login()
             ->colors([
                 'primary' => Color::Green,
